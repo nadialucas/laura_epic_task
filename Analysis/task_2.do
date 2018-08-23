@@ -1,6 +1,7 @@
 ************* Task 2 - Epic Orientation Data Project ******************
 clear all
-use "/Users/lauraalcocar/Dropbox/epic_task_nadia/laura/superfund_sample.dta"
+cd "`path'/epic_task_nadia/laura/IntermediateData"
+use "superfund_sample.dta"
 
 reg lnmdvalhs0 npl2000 lnmeanhs8, r
 est sto reg1
@@ -39,3 +40,5 @@ However, we can see that when more control related to the house were added, this
 which leads me to believe that the simplest regression is underestimating the effect. 
 This becomes even more obvious when adding controls for demographics but upon analyzing the last regression we can see that by controlling 
 for state fixed effects we obtain a statistically significant effect of 0.00085% increase in house prices which is actually lower than what we find in the third regression without controlling for fixed effects. 
+
+
